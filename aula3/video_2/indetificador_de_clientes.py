@@ -21,7 +21,7 @@ O formato de saída deve ser:
 cliente - descreva o perfil do cliente em 3 palavras
 """
 
-prompt_usuario = carrega("../dados/clientes_100.csv")
+prompt_usuario = carrega("../dados/clientes_10.csv")
 codificador = tiktoken.encoding_for_model("gpt-3.5-turbo")
 lista_de_tokens = codificador.encode(prompt_usuario + prompt_sistema)
 tokens = len(lista_de_tokens)
